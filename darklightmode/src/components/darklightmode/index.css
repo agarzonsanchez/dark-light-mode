@@ -11,8 +11,15 @@
   --button-bg: #fff;
   --button-text: #000;
 }
+.dark-light-mode .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
 
-.dark-light-mode {
+.dark-light-mode .container {
   background-color: var(--background);
   height: 100vh;
   display: flex;
@@ -21,12 +28,18 @@
   font-size: 20px;
   transition: all 0.5s;
 }
-.dark-light-mode p {
+.dark-light-mode .container p {
   color: var(--text-primary);
   font-size: 40px;
+  margin: 0px;
 }
 
 .dark-light-mode button {
   background-color: var(--button-bg);
   border: 1px solid var(--button-bg);
+  color: var(--button-text);
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bolder;
+  cursor: pointer;
 }
